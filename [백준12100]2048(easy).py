@@ -88,66 +88,6 @@ def left(board):
             board[i][x] = tmp[x]
     return board
 
-#
-# print(left(board))
-
-# maxB = 0
-# trial = 0
-# Q = deque()
-# Q.append(board)
-# while True:
-#     # print(trial)
-#     B = Q.popleft()
-#     print(B)
-#     for i in range(4):
-#         if i == 0:
-#             tmpB = deepcopy(B)
-#             nB = up(tmpB)
-#             for x in range(N):
-#                 for y in range(N):
-#                     if nB[x][y] > maxB:
-#                         maxB = nB[x][y]
-#             Q.append(nB)
-#             trial += 1
-#             print('up')
-#             print(nB)
-#         if i == 1:
-#             tmpB = deepcopy(B)
-#             nB = down(tmpB)
-#             for x in range(N):
-#                 for y in range(N):
-#                     if nB[x][y] > maxB:
-#                         maxB = nB[x][y]
-#             Q.append(nB)
-#             trial += 1
-#             print('down')
-#             print(nB)
-#         if i == 2:
-#             tmpB = deepcopy(B)
-#             nB = right(tmpB)
-#             for x in range(N):
-#                 for y in range(N):
-#                     if nB[x][y] > maxB:
-#                         maxB = nB[x][y]
-#             Q.append(nB)
-#             trial += 1
-#             print('right')
-#             print(nB)
-#         if i == 3:
-#             tmpB = deepcopy(B)
-#             nB = left(tmpB)
-#             for x in range(N):
-#                 for y in range(N):
-#                     if nB[x][y] > maxB:
-#                         maxB = nB[x][y]
-#             Q.append(nB)
-#             trial += 1
-#             print('left')
-#             print(nB)
-#     print('---------------------------')
-#     if trial == 4 ** 5:
-#         break
-# print(maxB)
 m = 0
 x = [0, 1, 2, 3]
 case = list(product(x, repeat=5))
